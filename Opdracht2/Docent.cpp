@@ -3,3 +3,10 @@
 //
 
 #include "Docent.h"
+
+Docent::Docent(string name, int age, string afk) : Persoon(name, age){
+    afkorting = afk;
+}
+
+string Docent::getAfkorting() {
+    return this->afkorting;}

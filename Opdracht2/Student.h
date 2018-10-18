@@ -15,6 +15,7 @@ private:
 
 public:
     Student(string name, int age, int studentNummer);
+    int getStudentNummer();
 
 };
 

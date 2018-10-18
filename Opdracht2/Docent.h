@@ -14,6 +14,7 @@ private:
 
 public:
     Docent(string naam, int leeftijd, string afk);
+    string getAfkorting();
 };
 
 

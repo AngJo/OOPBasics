@@ -5,5 +5,8 @@
 #include "Student.h"
 
 Student::Student(string name, int age, int studNummer) : Persoon (name, age){
-    studNummer = studentNummer;
+    studentNummer = studNummer;
 }
+
+int Student::getStudentNummer() {
+    return this->studentNummer;}
