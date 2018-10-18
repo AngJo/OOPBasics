@@ -1,18 +1,20 @@
 //
-// Created by User on 25-9-2018.
+// Created by User on 12-10-2018.
 //
 
-#ifndef OOPBASICS_DOCENT_H
-#define OOPBASICS_DOCENT_H
+#ifndef CLIONPROJECTS_DOCENT_H
+#define CLIONPROJECTS_DOCENT_H
 
 
-class Docent {
+#include "Persoon.h"
+
+class Docent : public Persoon{
 private:
-    string voorNaam, achterNaam, afkorting;
+    string afkorting;
 
 public:
-    Docent(string voorNaam, string achterNaam, string afkorting);
+    Docent(string naam, int leeftijd, string afk);
 };
 
 
-#endif //OOPBASICS_DOCENT_H
+#endif //CLIONPROJECTS_DOCENT_H
