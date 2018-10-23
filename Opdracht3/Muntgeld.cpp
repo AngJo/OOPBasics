@@ -4,20 +4,13 @@
 
 #include "Muntgeld.h"
 
-Muntgeld::Muntgeld(string naam, float waarde) {
-    naam = naam;
-    waarde = waarde;
+Muntgeld::Muntgeld(string naam, double waarde) {
+    this->naam = naam;
+    this->waarde = waarde;
 
 }
 
-void Muntgeld::setWaarde(float w){
-    waarde = w;
-}
-
-void Muntgeld::setNaam(string n){
-    naam = n;
-}
-float Muntgeld::getWaarde() {
+double Muntgeld::getWaarde() {
     return this->waarde;
 }
 

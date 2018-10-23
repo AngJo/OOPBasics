@@ -7,7 +7,7 @@
 
 #include "Muntgeld.h"
 
-class KoffieMuntje :Muntgeld {
+class KoffieMuntje : public Muntgeld {
 public:
     KoffieMuntje();
 };

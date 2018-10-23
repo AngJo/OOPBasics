@@ -1,36 +1,38 @@
 #include <iostream>
 
 #include "VijftigCent.h"
+#include "EenEuro.h"
+#include "KoffieMuntje.h"
+#include "KoffieAutomaat.h"
 #include <string>
 
 int main() {
 
-    string ingeworpenMunt;
-    int koffieKeuze;
-    float saldo = 0;
+    double ingeworpenMunt;
+    int verdergaanKeuze;
+    string koffieKeuze;
 
-    //VijftigCent vijftig = VijftigCent();
-    //EenEuro euro = EenEuro();
-    //KoffieMuntje munt = KoffieMuntje();
 
-    std::cout << "Waarde van vijftig: " << vijftig.getWaarde() << std::endl;
+    KoffieAutomaat automaat = KoffieAutomaat();
 
-    /*std::cout << "Worp een munt in. Kies uit 'Vijftig Cent', 'Een euro' of 'Koffiemuntje'." << std::endl;
+    std::cout << "Worp een munt in. Kies uit '0.50', '1.00' of '5.00'. Voer 0 in om te stoppen." << std::endl;
     std::cin >> ingeworpenMunt;
 
-     //Check welk munt ingeworpen is
-    if (ingeworpenMunt == munt.naam){
-    std::cout << "Maak een keuze: 1. Cappuccino (2.50), 2.Koffie (2.00) 3. Thee (1.50)"
+    if (ingeworpenMunt == 0){return 0;}
+    else{
+        automaat.InworpControleren(ingeworpenMunt);
+        automaat.KoffieGeven();
 
-    elif (ingeworpenMunt == vijftig.naam)
-    {
-        saldo = saldo + vijftig.waarde;
+        std::cout << "Wilt u een keuze maken voer 1 in. Wilt u meer saldo toevoegen voer 2 in." <<std::endl;
+        std::cin >> verdergaanKeuze;
+
+        if (verdergaanKeuze == 1 && automaat.getSaldo() != 0)
+        {
+            std::cout << "Maak alstublieft een keuze." <<std::endl;
+            std::cin >> koffieKeuze;
+            std::cout << "Alstublieft, hier is uw: " << koffieKeuze <<std::endl;
+        }
+
+
     }
-     elif (ingeworpenMunt == euro.naam){
-        saldo = saldo + euro.waarde; }
-
-
-    std::cout << "Huidig Saldo: " << saldo
-    //Vraag om nieuwe munt of vraag om koffie keuze*/
-    return 0;
 }

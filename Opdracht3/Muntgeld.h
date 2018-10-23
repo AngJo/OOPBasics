@@ -13,13 +13,11 @@ class Muntgeld {
 
 
 public:
-    Muntgeld(string naam, float waarde);
-    float waarde;
+    Muntgeld(string naam, double waarde);
+    double waarde;
     string naam;
     virtual string getNaam();
-    void setNaam(string naam);
-    void setWaarde(float waarde);
-    virtual float getWaarde();
+    virtual double getWaarde();
 };
 
 

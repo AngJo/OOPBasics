@@ -4,7 +4,5 @@
 
 #include "KoffieMuntje.h"
 
-KoffieMuntje::KoffieMuntje() : Muntgeld(naam, waarde){
-    naam = "Koffiemuntje";
-    waarde = 0.00;
+KoffieMuntje::KoffieMuntje() : Muntgeld("Koffiemuntje", 5.00){
 }

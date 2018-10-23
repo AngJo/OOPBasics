@@ -5,9 +5,7 @@
 #include "VijftigCent.h"
 #include "Muntgeld.h"
 
-VijftigCent::VijftigCent() : Muntgeld(naam, waarde) {
-    naam = "Vijftig Cent";
-    waarde = 0.50;
-}
+VijftigCent::VijftigCent() : Muntgeld("Vijftig Cent", 0.5) {
+ }
 
 

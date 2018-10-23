@@ -4,7 +4,5 @@
 
 #include "EenEuro.h"
 
-EenEuro::EenEuro() : Muntgeld(naam, waarde){
-    naam = "Eén Euro";
-    waarde = 1.00;
+EenEuro::EenEuro() : Muntgeld("Eén Euro", 1.00){
 }
