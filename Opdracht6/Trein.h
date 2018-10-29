@@ -10,8 +10,7 @@
 
 class Trein : public Vervoersmiddel{
 public:
-    double extraToeslag;
-    Trein(double extraToeslag);
+    Trein();
 };
 
 

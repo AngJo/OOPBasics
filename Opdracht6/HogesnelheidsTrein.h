@@ -8,9 +8,12 @@
 
 #include "Trein.h"
 
-class HogesnelheidsTrein : Trein {
+class HogesnelheidsTrein : public Trein {
 public:
-    HogesnelheidsTrein();
+
+    double extraToeslag;
+    HogesnelheidsTrein(double extraToeslag);
+    virtual double maxOpbrengstBerekenen(double afstand)=0;
 };
 
 

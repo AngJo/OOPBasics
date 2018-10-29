@@ -9,10 +9,11 @@
 
 class Vervoersmiddel {
 public:
-    static std::string naam;
+    static std::string naam ;
     static int maxPassagiers;
     static double prijsPerKilometer;
     Vervoersmiddel(std::string naam, int maxPassagiers, double prijsPerKm);
+    virtual double maxOpbrengstBerekenen(double afstand) = 0;
 };
 
 

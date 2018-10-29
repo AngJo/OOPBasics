@@ -11,6 +11,7 @@
 class Intercity : public Trein, public Vervoersmiddel{
 public:
     Intercity();
+    double maxOpbrengstBerekenen(double afstand) override;
 };
 
 

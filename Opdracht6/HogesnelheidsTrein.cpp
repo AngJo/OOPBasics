@@ -4,6 +4,6 @@
 
 #include "HogesnelheidsTrein.h"
 
-HogesnelheidsTrein::HogesnelheidsTrein() : Trein (5.00) {
-
+HogesnelheidsTrein::HogesnelheidsTrein(double extraToeslag) : Trein() {
+    this->extraToeslag = extraToeslag;
 }

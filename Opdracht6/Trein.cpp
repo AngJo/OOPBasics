@@ -4,6 +4,5 @@
 
 #include "Trein.h"
 
-Trein::Trein(double extraToeslag) : Vervoersmiddel(naam, maxPassagiers, prijsPerKilometer ){
-    this->extraToeslag = extraToeslag;
+Trein::Trein() : Vervoersmiddel(naam, maxPassagiers, prijsPerKilometer ){
 }
