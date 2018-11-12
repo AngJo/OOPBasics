@@ -4,20 +4,23 @@
 
 #ifndef OPDRACHT5_BIBLIOTHEEK_H
 #define OPDRACHT5_BIBLIOTHEEK_H
-
+#pragma once
 
 #include "Boek.h"
 
 class Bibliotheek {
 public:
-    Bibliotheek();
+    Bibliotheek(); //default constructor
+    virtual ~Bibliotheek(); //deconstructor
+    Bibliotheek(const Bibliotheek& bibliotheek); // Copy Constructor
+    Bibliotheek& operator=(const Bibliotheek&);
 
     void toonCollectie();
-    void leenBoekUit();
-    void voegBoekToe(Boek boek);
+    void voegBoekToe(string titel, string schrijver, int id);
+    void leenUit();
 
 private:
-    Boek boek = Boek("Boek Een", "Scholier", 1);
+    Boek* boek = new Boek();
 
 
 };
