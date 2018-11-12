@@ -8,7 +8,7 @@
 
 #include "HogesnelheidsTrein.h"
 
-class ICE : public HogesnelheidsTrein, public Vervoersmiddel{
+class ICE : public HogesnelheidsTrein{
     //Warning: ICE base-class Vervoersmiddel, is already a base-class of Hogesnelheidstrein
 public:
     ICE();

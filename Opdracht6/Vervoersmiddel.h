@@ -7,13 +7,24 @@
 
 #include <string>
 
+
 class Vervoersmiddel {
 public:
-    static std::string naam ;
-    static int maxPassagiers;
-    static double prijsPerKilometer;
-    Vervoersmiddel(std::string naam, int maxPassagiers, double prijsPerKm);
+    Vervoersmiddel();
+    //Vervoersmiddel(std::string naam, int maxPassagiers, double prijsPerKm);
     virtual double maxOpbrengstBerekenen(double afstand) = 0;
+
+    void setNaam(std::string naam);
+    void setMaxPassagiers(int aantal);
+    void setPrijs(double prijs);
+    std::string getName();
+    int getPassagiers();
+    double getPrijs();
+
+private:
+    std::string naam ;
+    int maxPassagiers;
+    double prijsPerKilometer;
 };
 
 

@@ -83,8 +83,8 @@ int main() {
     bieb->toonCollectie();
 
     //Boek uitlenen
-    bieb->leenUit();
-    bieb->toonCollectie();
+    //bieb->leenUit();
+    //bieb->toonCollectie();
 
     delete bieb;
     return 0;

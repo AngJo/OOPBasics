@@ -8,10 +8,11 @@
 
 #include "HogesnelheidsTrein.h"
 
-class Thalys : public HogesnelheidsTrein, public Vervoersmiddel {
+class Thalys : public HogesnelheidsTrein {
     //Base Class Vervoersmiddel is already a base-class of Hogesnelheidstrein
 public:
     Thalys();
+
     double maxOpbrengstBerekenen(double afstand) override;
 
 };

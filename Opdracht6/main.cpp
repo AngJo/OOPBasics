@@ -11,10 +11,10 @@ int main() {
     ICE ice = ICE();
     Thalys tha = Thalys();
 
-    std::cout << "Maximaal Opbrengst voor " << ic.naam << ":" << ic.maxOpbrengstBerekenen(56.50) << std::endl;
+    std::cout << "Maximaal Opbrengst voor " << ic.getName() << ":" << ic.maxOpbrengstBerekenen(56.50) << std::endl;
 
-    std::cout << "Maximaal Opbrengst voor " << ice.naam << ":" << ice.maxOpbrengstBerekenen(56.50) << std::endl;
+    std::cout << "Maximaal Opbrengst voor " << ice.getName() << ":" << ice.maxOpbrengstBerekenen(56.50) << std::endl;
 
-    std::cout << "Maximaal Opbrengst voor " << tha.naam << ":" << tha.maxOpbrengstBerekenen(56.50) << std::endl;
+    std::cout << "Maximaal Opbrengst voor " << tha.getName() << ":" << tha.maxOpbrengstBerekenen(56.50) << std::endl;
     return 0;
 }

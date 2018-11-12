@@ -4,12 +4,18 @@
 
 #include "Intercity.h"
 
-Intercity::Intercity() :Trein(), Vervoersmiddel("Intercity", 60, 4.00) {}
+Intercity::Intercity() :Trein() {
+    setNaam("Intercity");
+    setMaxPassagiers(60);
+    setPrijs(4.00);
+}
 
 double Intercity::maxOpbrengstBerekenen(double afstand) {
         double maxOpbrengst = 0;
+        int passagiers = getPassagiers();
+        double prijs = getPrijs();
 
-        maxOpbrengst = this->maxPassagiers*(this->prijsPerKilometer * afstand);
+        maxOpbrengst = passagiers*(prijs * afstand);
 
         return maxOpbrengst;
 }

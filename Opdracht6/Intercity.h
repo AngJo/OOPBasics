@@ -8,7 +8,7 @@
 
 #include "Trein.h"
 
-class Intercity : public Trein, public Vervoersmiddel{
+class Intercity : public Trein{
 public:
     Intercity();
     double maxOpbrengstBerekenen(double afstand) override;

@@ -4,5 +4,6 @@
 
 #include "Trein.h"
 
-Trein::Trein() : Vervoersmiddel(naam, maxPassagiers, prijsPerKilometer ){
+Trein::Trein() : Vervoersmiddel(){
 }
+

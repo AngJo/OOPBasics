@@ -7,6 +7,8 @@
 
 
 #include "Vervoersmiddel.h"
+#include <string>
+using namespace std;
 
 class Trein : public Vervoersmiddel{
 public:
